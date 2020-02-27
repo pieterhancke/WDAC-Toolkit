@@ -29,6 +29,8 @@ namespace WDAC_Wizard
         private string XmlPath;
 
         private int RowSelected; // Data grid row number selected by the user 
+        private Dictionary<string, string> TableDict;
+        BackgroundWorker backgroundWorker; 
 
         public SigningRules_Control(MainWindow pMainWindow)
         {
@@ -40,7 +42,10 @@ namespace WDAC_Wizard
             this._MainWindow = pMainWindow;
             this._MainWindow.RedoFlowRequired = false; 
             this.Log = this._MainWindow.Log;
-            this.RowSelected = -1; 
+            this.RowSelected = -1;
+            this.TableDict = new Dictionary<string, string>();
+            backgroundWorker = new BackgroundWorker();
+            backgroundWorker.WorkerReportsProgress = true;
         }
 
         /// <summary>
@@ -49,9 +54,11 @@ namespace WDAC_Wizard
         /// </summary>
         private void SigningRules_Control_Load(object sender, EventArgs e)
         {
-            // Read the policy and write to the UI in the background
-            if (!backgroundWorker1.IsBusy)
-                backgroundWorker1.RunWorkerAsync();
+            /* Read the policy and write to the UI in the background
+            backgroundWorker.DoWork += new DoWorkEventHandler(backgroundWorker1_DoWork);
+            backgroundWorker.ProgressChanged += new ProgressChangedEventHandler(backgroundWorker1_ProgressChanged);
+            backgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(backgroundWorker1_RunWorkerCompleted);
+            backgroundWorker.RunWorkerAsync(); */
         }
 
         /// <summary>
@@ -60,8 +67,32 @@ namespace WDAC_Wizard
         /// </summary>
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            readSetRules();
-            displayRules();
+            BackgroundWorker worker = sender as BackgroundWorker;
+            readSetRules(worker);
+            displayRules(worker);
+        }
+
+        private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            // Write data to 
+            int index = rulesDataGrid.Rows.Count;
+            Console.Write("Finished writing to UI!!");
+            //rulesDataGrid.FirstDisplayedScrollingRowIndex = index;
+            
+        }
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            // Write row packet to the table
+
+            // Get row index #, Scroll to new row index
+            int index = rulesDataGrid.Rows.Add();
+            rulesDataGrid.Rows[index].Cells["Column_Action"].Value = this.TableDict["Column_Action"];
+            rulesDataGrid.Rows[index].Cells["Column_Level"].Value = this.TableDict["Column_Level"];
+            rulesDataGrid.Rows[index].Cells["Column_Name"].Value = this.TableDict["Column_Name"];
+            rulesDataGrid.Rows[index].Cells["Column_Files"].Value = this.TableDict["Column_Files"]; ; //.Substring(0, fileAttrList.Length - 1); //trim trailing comma
+            rulesDataGrid.Rows[index].Cells["Column_Exceptions"].Value = this.TableDict["Column_Exceptions"];
+            
         }
 
         //private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -620,9 +651,14 @@ namespace WDAC_Wizard
         /// <summary>
         /// Diplays the signing rules from the template policy or the supplemental policy in the DataGridView on Control Load. 
         /// </summary>
-        private void displayRules()
+        private void displayRules(BackgroundWorker worker)
         {
-            int index = 0; 
+            int nOpsCompleted = 0;
+            int nOpsTotal = 0;
+
+            foreach (var signingScenario in this.Policy.SigningScenarios)
+                nOpsTotal += signingScenario.Signers.Count; 
+
             // Process publisher rules first:
             foreach (var signingScenario in this.Policy.SigningScenarios)
             {
@@ -659,15 +695,19 @@ namespace WDAC_Wizard
                         }
                     }
 
-                    // Get row index #, Scroll to new row index
-                    index = rulesDataGrid.Rows.Add();
-
                     // Write to UI
-                    rulesDataGrid.Rows[index].Cells["Column_Action"].Value = action;
-                    rulesDataGrid.Rows[index].Cells["Column_Level"].Value = "Publisher";
-                    rulesDataGrid.Rows[index].Cells["Column_Name"].Value = friendlyName;
-                    rulesDataGrid.Rows[index].Cells["Column_Files"].Value = fileAttrList; //.Substring(0, fileAttrList.Length - 1); //trim trailing comma
-                    rulesDataGrid.Rows[index].Cells["Column_Exceptions"].Value = exceptionList;
+                    
+                    this.TableDict = new Dictionary<string, string>();
+                    this.TableDict.Add("Column_Action", action);
+                    this.TableDict.Add("Column_Level", "Publisher");
+                    this.TableDict.Add("Column_Name", friendlyName);
+                    this.TableDict.Add("Column_Files", fileAttrList);
+                    this.TableDict.Add("Column_Exceptions", exceptionList);
+                    double progress = nOpsCompleted / nOpsTotal * 100; 
+                    //worker.ReportProgress(10);
+                    worker.ReportProgress((int)progress);
+
+                    nOpsCompleted++; 
                 }
 
             }
@@ -683,7 +723,7 @@ namespace WDAC_Wizard
                     else
                     {
                         // Get row index #, Scroll to new row index
-                        index = rulesDataGrid.Rows.Add();
+                        int index = rulesDataGrid.Rows.Add();
 
                         // Write to UI
                         rulesDataGrid.Rows[index].Cells["Column_Action"].Value = this.Policy.FileRules[ruleID].Action;
@@ -696,21 +736,13 @@ namespace WDAC_Wizard
                     } 
                 }
             }
-
-            // Scroll to bottom of table
-            rulesDataGrid.FirstDisplayedScrollingRowIndex = index;
-
         }
 
-        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-
-        }
 
         /// <summary>
         /// Method to parse either the template or supplemental policy and store into the custom data structures for digestion. 
         /// </summary>
-        private void readSetRules()
+        private void readSetRules(BackgroundWorker worker)
         {
             // Always going to have to parse an XML file - either going to be pre-exisiting policy (edit mode, supplmental policy) or template policy (new base)
             if (this._MainWindow.Policy.TemplatePath != null)
@@ -1068,7 +1100,8 @@ namespace WDAC_Wizard
             }
 
             this.Log.AddInfoMsg("--- Reading Set Signing Rules Ending ---");
-            
+
+            //worker.ReportProgress(1);
             bubbleUp(); // all original signing rules are set in MainWindow object - ...
                         //all mutations to rules are from here on completed using cmdlets
         }
@@ -1126,6 +1159,14 @@ namespace WDAC_Wizard
         /// </summary>
         private void deleteButton_Click(object sender, EventArgs e)
         {
+            // Read the policy and write to the UI in the background
+            backgroundWorker.DoWork += new DoWorkEventHandler(backgroundWorker1_DoWork);
+            backgroundWorker.ProgressChanged += new ProgressChangedEventHandler(backgroundWorker1_ProgressChanged);
+            backgroundWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(backgroundWorker1_RunWorkerCompleted);
+            backgroundWorker.RunWorkerAsync();
+
+            //DEBUGGING ONLY 
+            /*
             // Get info about the rule user wants to delete: row index and value
             int rowIdx = this.rulesDataGrid.CurrentCell.RowIndex;
             string ruleName = (String)this.rulesDataGrid["Column_Name", rowIdx].Value;
@@ -1242,8 +1283,8 @@ namespace WDAC_Wizard
                 // Delete from UI elements:
                 this.rulesDataGrid.Rows.RemoveAt(rowIdx);
                 doc.Save(this.XmlPath); 
-            }
-             
+            }*/
+
         }
 
         /// <summary>
@@ -1265,6 +1306,8 @@ namespace WDAC_Wizard
             this.RowSelected = customRow.Index; 
             
         }
+
+        
     }
 
 }

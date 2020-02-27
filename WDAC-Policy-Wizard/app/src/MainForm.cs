@@ -695,7 +695,7 @@ namespace WDAC_Wizard
             MergeTemplatesPolicy(MERGEPATH, worker);
 
             SetAdditionalParameters(worker);
-            ConvertToBinary();
+            ConvertToBinary(worker);
         }
 
         /// <summary>
@@ -1100,14 +1100,14 @@ namespace WDAC_Wizard
             Collection<PSObject> results = pipeline.Invoke();
 
             runspace.Dispose();
-            worker.ReportProgress(100);
+            worker.ReportProgress(98);
 
         }
 
         /// <summary>
         /// Method to convert the xml policy file into a binary CI policy file
         /// </summary>
-        public bool ConvertToBinary()
+        public bool ConvertToBinary(BackgroundWorker worker)
         {
             // Operations: Converts the xml schema into a binary policy
             this.Log.AddInfoMsg("-- Converting to Binary --");
@@ -1122,6 +1122,7 @@ namespace WDAC_Wizard
 
             pipeline.Commands.AddScript(binConvertCmd);
             Collection<PSObject> results = pipeline.Invoke();
+            worker.ReportProgress(100);
             return true; 
         }
 
