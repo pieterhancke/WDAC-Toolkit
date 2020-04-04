@@ -32,6 +32,7 @@ namespace WDAC_Wizard
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TemplatePage));
             this.panel2 = new System.Windows.Forms.Panel();
             this.windowsWorks_Button = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -115,7 +116,7 @@ namespace WDAC_Wizard
             // pictureBox5
             // 
             this.pictureBox5.Image = global::WDAC_Wizard.Properties.Resources.office;
-            this.pictureBox5.Location = new System.Drawing.Point(122, 125);
+            this.pictureBox5.Location = new System.Drawing.Point(122, 85);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(122, 88);
@@ -128,10 +129,10 @@ namespace WDAC_Wizard
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(30, 240);
+            this.label2.Location = new System.Drawing.Point(30, 219);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(350, 125);
+            this.label2.Size = new System.Drawing.Size(347, 150);
             this.label2.TabIndex = 8;
             this.label2.Text = "Windows Works authorizes:\r\n\r\n   - Windows signed applications,\r\n   - Windows Offi" +
     "ce365 applications,\r\n   - WHQL signed kernel drivers.\r\n";
@@ -140,7 +141,7 @@ namespace WDAC_Wizard
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::WDAC_Wizard.Properties.Resources.question_sign1;
-            this.pictureBox1.Location = new System.Drawing.Point(314, 62);
+            this.pictureBox1.Location = new System.Drawing.Point(314, 22);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(21, 29);
@@ -154,10 +155,10 @@ namespace WDAC_Wizard
             this.label_PolicyOne.AutoSize = true;
             this.label_PolicyOne.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_PolicyOne.ForeColor = System.Drawing.Color.Black;
-            this.label_PolicyOne.Location = new System.Drawing.Point(58, 79);
+            this.label_PolicyOne.Location = new System.Drawing.Point(58, 39);
             this.label_PolicyOne.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_PolicyOne.Name = "label_PolicyOne";
-            this.label_PolicyOne.Size = new System.Drawing.Size(269, 28);
+            this.label_PolicyOne.Size = new System.Drawing.Size(256, 31);
             this.label_PolicyOne.TabIndex = 5;
             this.label_PolicyOne.Text = "Windows Works Mode";
             // 
@@ -190,7 +191,7 @@ namespace WDAC_Wizard
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WDAC_Wizard.Properties.Resources.windows_logo;
-            this.pictureBox6.Location = new System.Drawing.Point(119, 125);
+            this.pictureBox6.Location = new System.Drawing.Point(119, 85);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(123, 88);
@@ -234,10 +235,10 @@ namespace WDAC_Wizard
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(22, 240);
+            this.label7.Location = new System.Drawing.Point(22, 219);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(350, 100);
+            this.label7.Size = new System.Drawing.Size(347, 120);
             this.label7.TabIndex = 17;
             this.label7.Text = "Allow Microsoft Mode authorizes:\r\n\r\n   - Windows Office365 applications,\r\n   - Wi" +
     "ndows Store signed apps.";
@@ -245,7 +246,7 @@ namespace WDAC_Wizard
             // pictureBox4
             // 
             this.pictureBox4.Image = global::WDAC_Wizard.Properties.Resources.question_sign1;
-            this.pictureBox4.Location = new System.Drawing.Point(316, 61);
+            this.pictureBox4.Location = new System.Drawing.Point(316, 21);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(21, 29);
@@ -259,10 +260,10 @@ namespace WDAC_Wizard
             this.label_PolicyFour.AutoSize = true;
             this.label_PolicyFour.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_PolicyFour.ForeColor = System.Drawing.Color.Black;
-            this.label_PolicyFour.Location = new System.Drawing.Point(65, 79);
+            this.label_PolicyFour.Location = new System.Drawing.Point(65, 39);
             this.label_PolicyFour.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_PolicyFour.Name = "label_PolicyFour";
-            this.label_PolicyFour.Size = new System.Drawing.Size(262, 28);
+            this.label_PolicyFour.Size = new System.Drawing.Size(255, 31);
             this.label_PolicyFour.TabIndex = 8;
             this.label_PolicyFour.Text = "Allow Microsoft Mode";
             // 
@@ -313,11 +314,11 @@ namespace WDAC_Wizard
             this.ISGLabel.AutoSize = true;
             this.ISGLabel.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.ISGLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.ISGLabel.Image = global::WDAC_Wizard.Properties.Resources.external_link_symbol_highlight;
+            this.ISGLabel.Image = ((System.Drawing.Image)(resources.GetObject("ISGLabel.Image")));
             this.ISGLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ISGLabel.Location = new System.Drawing.Point(33, 399);
+            this.ISGLabel.Location = new System.Drawing.Point(33, 398);
             this.ISGLabel.Name = "ISGLabel";
-            this.ISGLabel.Size = new System.Drawing.Size(375, 24);
+            this.ISGLabel.Size = new System.Drawing.Size(367, 28);
             this.ISGLabel.TabIndex = 97;
             this.ISGLabel.Text = "- Files with good reputation using ISG     ";
             this.ISGLabel.Click += new System.EventHandler(this.ISGLabel_Click);
@@ -327,10 +328,10 @@ namespace WDAC_Wizard
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(17, 240);
+            this.label6.Location = new System.Drawing.Point(17, 219);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(385, 150);
+            this.label6.Size = new System.Drawing.Size(383, 180);
             this.label6.TabIndex = 16;
             this.label6.Text = "Signed and Reputable Mode authorizes:\r\n\r\n   - Windows signed applications,\r\n   - " +
     "Windows Office365 applications,\r\n   - WHQL signed kernel drivers,\r\n   - Windows " +
@@ -339,7 +340,7 @@ namespace WDAC_Wizard
             // pictureBox8
             // 
             this.pictureBox8.Image = global::WDAC_Wizard.Properties.Resources.shield;
-            this.pictureBox8.Location = new System.Drawing.Point(132, 125);
+            this.pictureBox8.Location = new System.Drawing.Point(132, 85);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(133, 88);
@@ -355,13 +356,13 @@ namespace WDAC_Wizard
             this.label4.Location = new System.Drawing.Point(43, 275);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 25);
+            this.label4.Size = new System.Drawing.Size(0, 30);
             this.label4.TabIndex = 10;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WDAC_Wizard.Properties.Resources.question_sign1;
-            this.pictureBox3.Location = new System.Drawing.Point(378, 62);
+            this.pictureBox3.Location = new System.Drawing.Point(378, 22);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(21, 29);
@@ -375,10 +376,10 @@ namespace WDAC_Wizard
             this.label_PolicyThree.AutoSize = true;
             this.label_PolicyThree.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_PolicyThree.ForeColor = System.Drawing.Color.Black;
-            this.label_PolicyThree.Location = new System.Drawing.Point(57, 79);
+            this.label_PolicyThree.Location = new System.Drawing.Point(57, 39);
             this.label_PolicyThree.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_PolicyThree.Name = "label_PolicyThree";
-            this.label_PolicyThree.Size = new System.Drawing.Size(338, 28);
+            this.label_PolicyThree.Size = new System.Drawing.Size(316, 31);
             this.label_PolicyThree.TabIndex = 7;
             this.label_PolicyThree.Text = "Signed and Reputable Mode";
             // 
@@ -398,7 +399,7 @@ namespace WDAC_Wizard
             this.label_fileLocation.Location = new System.Drawing.Point(11, 115);
             this.label_fileLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_fileLocation.Name = "label_fileLocation";
-            this.label_fileLocation.Size = new System.Drawing.Size(195, 25);
+            this.label_fileLocation.Size = new System.Drawing.Size(193, 30);
             this.label_fileLocation.TabIndex = 6;
             this.label_fileLocation.Text = "Policy File Location:";
             // 
@@ -409,7 +410,7 @@ namespace WDAC_Wizard
             this.textBoxPolicyPath.Location = new System.Drawing.Point(222, 114);
             this.textBoxPolicyPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxPolicyPath.Name = "textBoxPolicyPath";
-            this.textBoxPolicyPath.Size = new System.Drawing.Size(482, 29);
+            this.textBoxPolicyPath.Size = new System.Drawing.Size(482, 31);
             this.textBoxPolicyPath.TabIndex = 7;
             this.textBoxPolicyPath.Click += new System.EventHandler(this.textBoxPolicyPath_TextChanged);
             // 
@@ -421,7 +422,7 @@ namespace WDAC_Wizard
             this.label_policyName.Location = new System.Drawing.Point(11, 60);
             this.label_policyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_policyName.Name = "label_policyName";
-            this.label_policyName.Size = new System.Drawing.Size(133, 25);
+            this.label_policyName.Size = new System.Drawing.Size(133, 30);
             this.label_policyName.TabIndex = 8;
             this.label_policyName.Text = "Policy Name:";
             // 
@@ -432,7 +433,7 @@ namespace WDAC_Wizard
             this.textBox_PolicyName.Location = new System.Drawing.Point(222, 60);
             this.textBox_PolicyName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox_PolicyName.Name = "textBox_PolicyName";
-            this.textBox_PolicyName.Size = new System.Drawing.Size(406, 29);
+            this.textBox_PolicyName.Size = new System.Drawing.Size(406, 31);
             this.textBox_PolicyName.TabIndex = 9;
             this.textBox_PolicyName.TextChanged += new System.EventHandler(this.textBoxPolicyName_TextChanged);
             // 
@@ -460,7 +461,7 @@ namespace WDAC_Wizard
             this.label5.Location = new System.Drawing.Point(4, 14);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(655, 27);
+            this.label5.Size = new System.Drawing.Size(646, 30);
             this.label5.TabIndex = 11;
             this.label5.Text = "You can modify the policy name and location, or keep the default.";
             // 
@@ -484,10 +485,10 @@ namespace WDAC_Wizard
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(192, 50);
+            this.label1.Location = new System.Drawing.Point(192, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(476, 34);
+            this.label1.Size = new System.Drawing.Size(470, 38);
             this.label1.TabIndex = 95;
             this.label1.Text = "Select a Base Template for the policy";
             // 

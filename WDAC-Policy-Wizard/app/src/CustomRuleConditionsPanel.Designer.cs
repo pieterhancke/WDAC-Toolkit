@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomRuleConditionsPanel));
             this.panel_CustomRules = new System.Windows.Forms.Panel();
             this.publisherInfoLabel = new System.Windows.Forms.Label();
             this.button_Create = new System.Windows.Forms.Button();
@@ -54,6 +55,7 @@
             this.button_Browse = new System.Windows.Forms.Button();
             this.label_condition = new System.Windows.Forms.Label();
             this.label_Error = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel_CustomRules.SuspendLayout();
             this.panel_FileFolder.SuspendLayout();
             this.panel_Publisher_Scroll.SuspendLayout();
@@ -62,7 +64,7 @@
             // 
             // panel_CustomRules
             // 
-            this.panel_CustomRules.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel_CustomRules.BackColor = System.Drawing.Color.Transparent;
             this.panel_CustomRules.Controls.Add(this.publisherInfoLabel);
             this.panel_CustomRules.Controls.Add(this.button_Create);
             this.panel_CustomRules.Controls.Add(this.panel_FileFolder);
@@ -76,7 +78,7 @@
             this.panel_CustomRules.Controls.Add(this.textBox_ReferenceFile);
             this.panel_CustomRules.Controls.Add(this.button_Browse);
             this.panel_CustomRules.Controls.Add(this.label_condition);
-            this.panel_CustomRules.Location = new System.Drawing.Point(12, 11);
+            this.panel_CustomRules.Location = new System.Drawing.Point(12, 55);
             this.panel_CustomRules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_CustomRules.Name = "panel_CustomRules";
             this.panel_CustomRules.Size = new System.Drawing.Size(989, 672);
@@ -86,13 +88,13 @@
             // 
             this.publisherInfoLabel.AutoSize = true;
             this.publisherInfoLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.publisherInfoLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.publisherInfoLabel.Location = new System.Drawing.Point(16, 530);
+            this.publisherInfoLabel.ForeColor = System.Drawing.Color.SteelBlue;
+            this.publisherInfoLabel.Location = new System.Drawing.Point(16, 549);
             this.publisherInfoLabel.Name = "publisherInfoLabel";
-            this.publisherInfoLabel.Size = new System.Drawing.Size(586, 50);
+            this.publisherInfoLabel.Size = new System.Drawing.Size(863, 50);
             this.publisherInfoLabel.TabIndex = 106;
-            this.publisherInfoLabel.Text = "Rule applies to all files signed by this Issuing CA and publisher with this  \r\nfi" +
-    "le name with a version at or above the specified version number.";
+            this.publisherInfoLabel.Text = "Rule applies to all files signed by this Issuing CA and publisher with this file " +
+    "name with a version at or above\r\nthe specified version number.";
             this.publisherInfoLabel.Visible = false;
             // 
             // button_Create
@@ -103,7 +105,7 @@
             this.button_Create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Create.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Create.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button_Create.Location = new System.Drawing.Point(19, 630);
+            this.button_Create.Location = new System.Drawing.Point(19, 625);
             this.button_Create.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Create.Name = "button_Create";
             this.button_Create.Size = new System.Drawing.Size(145, 40);
@@ -116,7 +118,7 @@
             // 
             this.panel_FileFolder.Controls.Add(this.radioButton_Folder);
             this.panel_FileFolder.Controls.Add(this.radioButton_File);
-            this.panel_FileFolder.Location = new System.Drawing.Point(687, 284);
+            this.panel_FileFolder.Location = new System.Drawing.Point(706, 302);
             this.panel_FileFolder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_FileFolder.Name = "panel_FileFolder";
             this.panel_FileFolder.Size = new System.Drawing.Size(179, 52);
@@ -156,8 +158,8 @@
             // 
             this.label_Info.AutoSize = true;
             this.label_Info.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Info.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label_Info.Location = new System.Drawing.Point(16, 175);
+            this.label_Info.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label_Info.Location = new System.Drawing.Point(16, 178);
             this.label_Info.Name = "label_Info";
             this.label_Info.Size = new System.Drawing.Size(92, 25);
             this.label_Info.TabIndex = 95;
@@ -185,7 +187,7 @@
             // textBoxSlider_3
             // 
             this.textBoxSlider_3.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.textBoxSlider_3.Location = new System.Drawing.Point(191, 175);
+            this.textBoxSlider_3.Location = new System.Drawing.Point(205, 179);
             this.textBoxSlider_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSlider_3.Name = "textBoxSlider_3";
             this.textBoxSlider_3.Size = new System.Drawing.Size(401, 29);
@@ -194,12 +196,12 @@
             // labelSlider_3
             // 
             this.labelSlider_3.AutoSize = true;
-            this.labelSlider_3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.labelSlider_3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSlider_3.ForeColor = System.Drawing.Color.Black;
             this.labelSlider_3.Location = new System.Drawing.Point(43, 176);
             this.labelSlider_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSlider_3.Name = "labelSlider_3";
-            this.labelSlider_3.Size = new System.Drawing.Size(91, 25);
+            this.labelSlider_3.Size = new System.Drawing.Size(99, 28);
             this.labelSlider_3.TabIndex = 104;
             this.labelSlider_3.Text = "File name:";
             this.labelSlider_3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -207,7 +209,7 @@
             // textBoxSlider_2
             // 
             this.textBoxSlider_2.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.textBoxSlider_2.Location = new System.Drawing.Point(191, 125);
+            this.textBoxSlider_2.Location = new System.Drawing.Point(205, 128);
             this.textBoxSlider_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSlider_2.Name = "textBoxSlider_2";
             this.textBoxSlider_2.Size = new System.Drawing.Size(401, 29);
@@ -216,12 +218,12 @@
             // labelSlider_2
             // 
             this.labelSlider_2.AutoSize = true;
-            this.labelSlider_2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.labelSlider_2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSlider_2.ForeColor = System.Drawing.Color.Black;
-            this.labelSlider_2.Location = new System.Drawing.Point(43, 126);
+            this.labelSlider_2.Location = new System.Drawing.Point(43, 125);
             this.labelSlider_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSlider_2.Name = "labelSlider_2";
-            this.labelSlider_2.Size = new System.Drawing.Size(104, 25);
+            this.labelSlider_2.Size = new System.Drawing.Size(114, 28);
             this.labelSlider_2.TabIndex = 102;
             this.labelSlider_2.Text = "File version:";
             this.labelSlider_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -229,7 +231,7 @@
             // textBoxSlider_1
             // 
             this.textBoxSlider_1.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.textBoxSlider_1.Location = new System.Drawing.Point(191, 75);
+            this.textBoxSlider_1.Location = new System.Drawing.Point(205, 75);
             this.textBoxSlider_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSlider_1.Name = "textBoxSlider_1";
             this.textBoxSlider_1.Size = new System.Drawing.Size(401, 29);
@@ -238,12 +240,12 @@
             // labelSlider_1
             // 
             this.labelSlider_1.AutoSize = true;
-            this.labelSlider_1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.labelSlider_1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSlider_1.ForeColor = System.Drawing.Color.Black;
-            this.labelSlider_1.Location = new System.Drawing.Point(43, 75);
+            this.labelSlider_1.Location = new System.Drawing.Point(43, 73);
             this.labelSlider_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSlider_1.Name = "labelSlider_1";
-            this.labelSlider_1.Size = new System.Drawing.Size(88, 25);
+            this.labelSlider_1.Size = new System.Drawing.Size(96, 28);
             this.labelSlider_1.TabIndex = 100;
             this.labelSlider_1.Text = "Publisher:";
             this.labelSlider_1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -251,7 +253,7 @@
             // textBoxSlider_0
             // 
             this.textBoxSlider_0.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.textBoxSlider_0.Location = new System.Drawing.Point(191, 25);
+            this.textBoxSlider_0.Location = new System.Drawing.Point(205, 23);
             this.textBoxSlider_0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxSlider_0.Name = "textBoxSlider_0";
             this.textBoxSlider_0.Size = new System.Drawing.Size(401, 29);
@@ -260,12 +262,12 @@
             // labelSlider_0
             // 
             this.labelSlider_0.AutoSize = true;
-            this.labelSlider_0.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.labelSlider_0.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSlider_0.ForeColor = System.Drawing.Color.Black;
-            this.labelSlider_0.Location = new System.Drawing.Point(43, 25);
+            this.labelSlider_0.Location = new System.Drawing.Point(43, 20);
             this.labelSlider_0.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSlider_0.Name = "labelSlider_0";
-            this.labelSlider_0.Size = new System.Drawing.Size(100, 25);
+            this.labelSlider_0.Size = new System.Drawing.Size(106, 28);
             this.labelSlider_0.TabIndex = 98;
             this.labelSlider_0.Text = "Issuing CA:";
             this.labelSlider_0.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -300,29 +302,29 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(13, 116);
+            this.label9.Location = new System.Drawing.Point(14, 122);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 30);
+            this.label9.Size = new System.Drawing.Size(100, 28);
             this.label9.TabIndex = 89;
             this.label9.Text = "Rule Type:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboBox_RuleType
             // 
-            this.comboBox_RuleType.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox_RuleType.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboBox_RuleType.FormattingEnabled = true;
             this.comboBox_RuleType.Items.AddRange(new object[] {
             "Publisher",
             "Path",
             "File Attributes",
             "File Hash"});
-            this.comboBox_RuleType.Location = new System.Drawing.Point(133, 116);
+            this.comboBox_RuleType.Location = new System.Drawing.Point(134, 117);
             this.comboBox_RuleType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox_RuleType.Name = "comboBox_RuleType";
-            this.comboBox_RuleType.Size = new System.Drawing.Size(224, 40);
+            this.comboBox_RuleType.Size = new System.Drawing.Size(224, 36);
             this.comboBox_RuleType.TabIndex = 89;
             this.comboBox_RuleType.SelectedIndexChanged += new System.EventHandler(this.RuleType_ComboboxChanged);
             // 
@@ -331,7 +333,7 @@
             this.radioButton_Deny.AutoSize = true;
             this.radioButton_Deny.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_Deny.ForeColor = System.Drawing.Color.Black;
-            this.radioButton_Deny.Location = new System.Drawing.Point(120, 58);
+            this.radioButton_Deny.Location = new System.Drawing.Point(117, 61);
             this.radioButton_Deny.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton_Deny.Name = "radioButton_Deny";
             this.radioButton_Deny.Size = new System.Drawing.Size(86, 34);
@@ -346,7 +348,7 @@
             this.radioButton_Allow.Checked = true;
             this.radioButton_Allow.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_Allow.ForeColor = System.Drawing.Color.Black;
-            this.radioButton_Allow.Location = new System.Drawing.Point(20, 58);
+            this.radioButton_Allow.Location = new System.Drawing.Point(17, 61);
             this.radioButton_Allow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radioButton_Allow.Name = "radioButton_Allow";
             this.radioButton_Allow.Size = new System.Drawing.Size(89, 34);
@@ -359,7 +361,7 @@
             // textBox_ReferenceFile
             // 
             this.textBox_ReferenceFile.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_ReferenceFile.Location = new System.Drawing.Point(164, 230);
+            this.textBox_ReferenceFile.Location = new System.Drawing.Point(164, 242);
             this.textBox_ReferenceFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_ReferenceFile.Name = "textBox_ReferenceFile";
             this.textBox_ReferenceFile.Size = new System.Drawing.Size(516, 34);
@@ -371,12 +373,12 @@
             this.button_Browse.BackColor = System.Drawing.Color.Transparent;
             this.button_Browse.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
             this.button_Browse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Browse.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Browse.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Browse.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.button_Browse.Location = new System.Drawing.Point(687, 226);
+            this.button_Browse.Location = new System.Drawing.Point(706, 236);
             this.button_Browse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Browse.Name = "button_Browse";
-            this.button_Browse.Size = new System.Drawing.Size(100, 40);
+            this.button_Browse.Size = new System.Drawing.Size(121, 48);
             this.button_Browse.TabIndex = 84;
             this.button_Browse.Text = "Browse";
             this.button_Browse.UseVisualStyleBackColor = false;
@@ -385,12 +387,12 @@
             // label_condition
             // 
             this.label_condition.AutoSize = true;
-            this.label_condition.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_condition.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label_condition.ForeColor = System.Drawing.Color.Black;
-            this.label_condition.Location = new System.Drawing.Point(15, 229);
+            this.label_condition.Location = new System.Drawing.Point(15, 242);
             this.label_condition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_condition.Name = "label_condition";
-            this.label_condition.Size = new System.Drawing.Size(154, 30);
+            this.label_condition.Size = new System.Drawing.Size(135, 28);
             this.label_condition.TabIndex = 87;
             this.label_condition.Text = "Reference File:";
             this.label_condition.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -400,20 +402,32 @@
             this.label_Error.AutoSize = true;
             this.label_Error.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Error.ForeColor = System.Drawing.Color.Red;
-            this.label_Error.Location = new System.Drawing.Point(12, 688);
+            this.label_Error.Location = new System.Drawing.Point(12, 732);
             this.label_Error.Name = "label_Error";
-            this.label_Error.Size = new System.Drawing.Size(107, 25);
+            this.label_Error.Size = new System.Drawing.Size(89, 21);
             this.label_Error.TabIndex = 97;
             this.label_Error.Text = "Label_Error";
             this.label_Error.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(335, 38);
+            this.label1.TabIndex = 98;
+            this.label1.Text = "Create a Custom File Rule";
             // 
             // CustomRuleConditionsPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 720);
+            this.ClientSize = new System.Drawing.Size(1011, 768);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label_Error);
             this.Controls.Add(this.panel_CustomRules);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CustomRuleConditionsPanel";
             this.Text = "Custom Rules ";
             this.Load += new System.EventHandler(this.CustomRuleConditionsPanel_Load);
@@ -457,5 +471,6 @@
         private System.Windows.Forms.Button button_Browse;
         private System.Windows.Forms.Label label_condition;
         private System.Windows.Forms.Label label_Error;
+        private System.Windows.Forms.Label label1;
     }
 }

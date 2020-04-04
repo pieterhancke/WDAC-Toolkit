@@ -34,8 +34,11 @@ namespace WDAC_Wizard
         public CustomRuleConditionsPanel(SigningRules_Control _signingRules)
         {
             InitializeComponent();
+
             this.SigningRulesControl = _signingRules;
-            this.Log = _signingRules.Log; 
+            this.Log = _signingRules.Log;
+            this.PolicyCustomRule = new PolicyCustomRules();
+
         }
 
         private void CustomRuleConditionsPanel_Load(object sender, EventArgs e)
@@ -84,8 +87,6 @@ namespace WDAC_Wizard
             // Set Level value to the RuleLevel value//or should this be type for simplicity? 
             level = this.PolicyCustomRule.GetRuleType().ToString();
 
-
-
             switch (this.PolicyCustomRule.GetRuleLevel())
             {
                 case PolicyCustomRules.RuleLevel.PcaCertificate:
@@ -129,7 +130,6 @@ namespace WDAC_Wizard
 
             }
 
-
             this.Log.AddInfoMsg(String.Format("CUSTOM RULE: {0} - {1} - {2} ", action, level, name));
 
             // Attach the int row number we added it to
@@ -148,6 +148,11 @@ namespace WDAC_Wizard
 
             // Reset UI view
             ClearCustomRulesPanel(true);
+
+            // Scroll to bottom of the table
+            this.SigningRulesControl.rulesDataGrid.FirstDisplayedScrollingRowIndex = 
+                this.SigningRulesControl.rulesDataGrid.RowCount - 1;
+
         }
 
 
@@ -175,8 +180,9 @@ namespace WDAC_Wizard
                             if (textBoxSlider_0.Text == "N/A" || textBoxSlider_1.Text == "N/A" || textBoxSlider_2.Text == "N/A"
                                 || textBoxSlider_3.Text == "N/A")
                                 this.PolicyCustomRule.SetRuleLevel(PolicyCustomRules.RuleLevel.None);
-                            publisherInfoLabel.Text = "Rule applies to all files signed by this Issuing CA with this publisher, \r\n" +
-                                "and file name with a version at or above the specified version number.";
+
+                            publisherInfoLabel.Text = "Rule applies to all files signed by this Issuing CA with this publisher, and file name with a \r\n" +
+                                "version at or above the specified version number.";
                             this.Log.AddInfoMsg("Publisher file rule level set to file publisher (0)");
                         }
                         else if (pos > 2 && pos <= 6)
@@ -188,7 +194,8 @@ namespace WDAC_Wizard
                             textBoxSlider_3.Text = "*";
                             if (textBoxSlider_0.Text == "N/A" || textBoxSlider_1.Text == "N/A" || textBoxSlider_2.Text == "N/A")
                                 this.PolicyCustomRule.SetRuleLevel(PolicyCustomRules.RuleLevel.None);
-                            publisherInfoLabel.Text = "Rule applies to all files signed by this Issuing CA with this publisher, \r\n" +
+
+                            publisherInfoLabel.Text = "Rule applies to all files signed by this Issuing CA with this publisher, " +
                                 "with a version at or above the specified version number.";
                             this.Log.AddInfoMsg("Publisher file rule level set to file publisher (4)");
                         }
@@ -202,6 +209,7 @@ namespace WDAC_Wizard
                             textBoxSlider_3.Text = "*";
                             if (textBoxSlider_0.Text == "N/A" || textBoxSlider_1.Text == "N/A")
                                 this.PolicyCustomRule.SetRuleLevel(PolicyCustomRules.RuleLevel.None);
+
                             publisherInfoLabel.Text = "Rule applies to all files signed by this Issuing CA with this publisher.";
                             this.Log.AddInfoMsg("Publisher file rule level set to publisher (8)");
                         }
@@ -216,6 +224,7 @@ namespace WDAC_Wizard
                             textBoxSlider_3.Text = "*";
                             if (textBoxSlider_0.Text == "N/A")
                                 this.PolicyCustomRule.SetRuleLevel(PolicyCustomRules.RuleLevel.None);
+
                             publisherInfoLabel.Text = "Rule applies to all files signed by this issuing CA subject name.";
                             this.Log.AddInfoMsg("Publisher file rule level set to PCA certificate (12)");
 
@@ -303,24 +312,25 @@ namespace WDAC_Wizard
             if (comboBox_RuleType.SelectedIndex < 0)
                 return;
 
-            string selectedOpt = comboBox_RuleType.SelectedItem.ToString();
+            // UI updates
             ClearCustomRulesPanel(false);
             label_Info.Visible = true;
             label_Error.Visible = false; // Clear error label
 
+            string selectedOpt = comboBox_RuleType.SelectedItem.ToString();
             switch (selectedOpt)
             {
                 case "Publisher":
                     this.PolicyCustomRule.SetRuleType(PolicyCustomRules.RuleType.Publisher);
                     this.PolicyCustomRule.SetRuleLevel(PolicyCustomRules.RuleLevel.FilePublisher); // Match UI by default
-                    label_Info.Text = "Creates a rule for a file that is signed by the software publisher. \r\n" +
-                        "Select a file to use as reference for your rule.";
+                    label_Info.Text = "Creates a rule for a file that is signed by the software publisher. " +
+                       "Select a file to use as reference for your rule.";
                     break;
 
                 case "Path":
                     this.PolicyCustomRule.SetRuleType(PolicyCustomRules.RuleType.FilePath);
                     this.PolicyCustomRule.SetRuleLevel(PolicyCustomRules.RuleLevel.FilePath);
-                    label_Info.Text = "Creates a rule for a specific file or folder. \r\n" +
+                    label_Info.Text = "Creates a rule for a specific file or folder. " +
                         "Selecting folder will affect all files in the folder.";
                     panel_FileFolder.Visible = true;
                     radioButton_File.Checked = true; // By default, 
@@ -329,20 +339,20 @@ namespace WDAC_Wizard
                 case "File Attributes":
                     this.PolicyCustomRule.SetRuleType(PolicyCustomRules.RuleType.FileAttributes);
                     this.PolicyCustomRule.SetRuleLevel(PolicyCustomRules.RuleLevel.InternalName); // Match UI by default
-                    label_Info.Text = "Creates a rule for a file based on one of its attributes. \r\n" +
+                    label_Info.Text = "Creates a rule for a file based on one of its attributes. " +
                         "Select a file to use as reference for your rule.";
                     break;
 
                 case "File Hash":
                     this.PolicyCustomRule.SetRuleType(PolicyCustomRules.RuleType.Hash);
                     this.PolicyCustomRule.SetRuleLevel(PolicyCustomRules.RuleLevel.Hash);
-                    label_Info.Text = "Creates a rule for a file that is not signed. \r\n" +
+                    label_Info.Text = "Creates a rule for a file that is not signed. " +
                         "Select the file for which you wish to create a hash rule.";
                     break;
+
                 default:
                     break;
             }
-
             this.Log.AddInfoMsg(String.Format("Custom File Rule Level Set to {0}", selectedOpt));
         }
 
@@ -358,10 +368,8 @@ namespace WDAC_Wizard
             else
                 this.PolicyCustomRule.SetRulePermission(PolicyCustomRules.RulePermission.Deny);
 
-
             this.Log.AddInfoMsg(String.Format("Allow Radio Button set to {0}",
                 this.PolicyCustomRule.GetRulePermission() == PolicyCustomRules.RulePermission.Allow));
-
         }
 
         /// <summary>
