@@ -60,7 +60,7 @@ namespace WDAC_Wizard
             // label_Welcome
             // 
             this.label_Welcome.AutoSize = true;
-            this.label_Welcome.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Welcome.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Welcome.ForeColor = System.Drawing.Color.Black;
             this.label_Welcome.Location = new System.Drawing.Point(222, 50);
             this.label_Welcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -75,7 +75,7 @@ namespace WDAC_Wizard
             this.button_New.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(230)))), ((int)(((byte)(253)))));
             this.button_New.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(230)))), ((int)(((byte)(253)))));
             this.button_New.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_New.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_New.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_New.Image = global::WDAC_Wizard.Properties.Resources.newPolicy;
             this.button_New.Location = new System.Drawing.Point(394, 270);
             this.button_New.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -90,7 +90,7 @@ namespace WDAC_Wizard
             // label_Info
             // 
             this.label_Info.AutoSize = true;
-            this.label_Info.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Info.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Info.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.label_Info.Location = new System.Drawing.Point(202, 809);
             this.label_Info.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -113,7 +113,7 @@ namespace WDAC_Wizard
             this.button_Edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(230)))), ((int)(((byte)(253)))));
             this.button_Edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(230)))), ((int)(((byte)(253)))));
             this.button_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Edit.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Edit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Edit.Image = global::WDAC_Wizard.Properties.Resources.tools;
             this.button_Edit.Location = new System.Drawing.Point(680, 270);
             this.button_Edit.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -131,7 +131,7 @@ namespace WDAC_Wizard
             this.button_Merge.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(230)))), ((int)(((byte)(253)))));
             this.button_Merge.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(230)))), ((int)(((byte)(253)))));
             this.button_Merge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Merge.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Merge.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Merge.Image = global::WDAC_Wizard.Properties.Resources.merge;
             this.button_Merge.Location = new System.Drawing.Point(976, 270);
             this.button_Merge.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -171,7 +171,7 @@ namespace WDAC_Wizard
             this.page5_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page5_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page5_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.page5_Button.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.page5_Button.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.page5_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.page5_Button.Location = new System.Drawing.Point(18, 480);
             this.page5_Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -193,7 +193,7 @@ namespace WDAC_Wizard
             this.page4_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page4_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page4_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.page4_Button.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.page4_Button.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.page4_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.page4_Button.Location = new System.Drawing.Point(18, 420);
             this.page4_Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -215,7 +215,7 @@ namespace WDAC_Wizard
             this.page3_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page3_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page3_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.page3_Button.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.page3_Button.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.page3_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.page3_Button.Location = new System.Drawing.Point(18, 360);
             this.page3_Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -237,7 +237,7 @@ namespace WDAC_Wizard
             this.page2_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page2_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page2_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.page2_Button.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.page2_Button.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.page2_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.page2_Button.Location = new System.Drawing.Point(18, 300);
             this.page2_Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -259,7 +259,7 @@ namespace WDAC_Wizard
             this.page1_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page1_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.page1_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.page1_Button.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.page1_Button.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.page1_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.page1_Button.Location = new System.Drawing.Point(18, 240);
             this.page1_Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -280,7 +280,7 @@ namespace WDAC_Wizard
             this.workflow_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.workflow_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.workflow_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.workflow_Button.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.workflow_Button.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.workflow_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.workflow_Button.Location = new System.Drawing.Point(6, 180);
             this.workflow_Button.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
@@ -309,7 +309,7 @@ namespace WDAC_Wizard
             this.home_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.home_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.home_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.home_Button.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.home_Button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.home_Button.Image = global::WDAC_Wizard.Properties.Resources.house;
             this.home_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.home_Button.Location = new System.Drawing.Point(18, 110);
@@ -330,7 +330,7 @@ namespace WDAC_Wizard
             this.settings_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.settings_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.settings_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settings_Button.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settings_Button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settings_Button.Image = global::WDAC_Wizard.Properties.Resources.gear;
             this.settings_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.settings_Button.Location = new System.Drawing.Point(18, 776);
@@ -358,7 +358,7 @@ namespace WDAC_Wizard
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(222, 98);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -370,7 +370,7 @@ namespace WDAC_Wizard
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label2.Location = new System.Drawing.Point(355, 544);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -381,7 +381,7 @@ namespace WDAC_Wizard
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label3.Location = new System.Drawing.Point(676, 544);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
@@ -392,7 +392,7 @@ namespace WDAC_Wizard
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.label4.Location = new System.Drawing.Point(962, 544);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";

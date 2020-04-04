@@ -57,7 +57,7 @@ namespace WDAC_Wizard
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(197, 50);
             this.label1.Name = "label1";
@@ -68,7 +68,7 @@ namespace WDAC_Wizard
             // labelBase
             // 
             this.labelBase.AutoSize = true;
-            this.labelBase.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBase.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelBase.Location = new System.Drawing.Point(248, 134);
             this.labelBase.Name = "labelBase";
@@ -80,7 +80,7 @@ namespace WDAC_Wizard
             // labelSupp
             // 
             this.labelSupp.AutoSize = true;
-            this.labelSupp.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSupp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSupp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelSupp.Location = new System.Drawing.Point(248, 240);
             this.labelSupp.Name = "labelSupp";
@@ -108,7 +108,7 @@ namespace WDAC_Wizard
             // Verified_Label
             // 
             this.Verified_Label.AutoSize = true;
-            this.Verified_Label.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.Verified_Label.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.Verified_Label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Verified_Label.Location = new System.Drawing.Point(54, 150);
             this.Verified_Label.Name = "Verified_Label";
@@ -132,7 +132,7 @@ namespace WDAC_Wizard
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.5F, System.Drawing.FontStyle.Italic);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Italic);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(4, 41);
             this.label2.Name = "label2";
@@ -145,7 +145,7 @@ namespace WDAC_Wizard
             this.button_Browse.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.button_Browse.FlatAppearance.BorderSize = 2;
             this.button_Browse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Browse.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Browse.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Browse.ForeColor = System.Drawing.Color.Black;
             this.button_Browse.Location = new System.Drawing.Point(489, 85);
             this.button_Browse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -158,7 +158,7 @@ namespace WDAC_Wizard
             // 
             // textBoxPolicyPath
             // 
-            this.textBoxPolicyPath.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.textBoxPolicyPath.Font = new System.Drawing.Font("Segoe UI", 8.5F);
             this.textBoxPolicyPath.Location = new System.Drawing.Point(14, 90);
             this.textBoxPolicyPath.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxPolicyPath.Name = "textBoxPolicyPath";
@@ -169,7 +169,7 @@ namespace WDAC_Wizard
             // label_policyName
             // 
             this.label_policyName.AutoSize = true;
-            this.label_policyName.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_policyName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_policyName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label_policyName.Location = new System.Drawing.Point(9, 6);
             this.label_policyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -205,7 +205,7 @@ namespace WDAC_Wizard
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(248, 180);
             this.label3.Name = "label3";
@@ -217,7 +217,7 @@ namespace WDAC_Wizard
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(248, 284);
             this.label4.Name = "label4";
@@ -228,7 +228,7 @@ namespace WDAC_Wizard
             // SupplementalInfoLabel
             // 
             this.SupplementalInfoLabel.AutoSize = true;
-            this.SupplementalInfoLabel.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.SupplementalInfoLabel.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.SupplementalInfoLabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.SupplementalInfoLabel.Image = global::WDAC_Wizard.Properties.Resources.external_link_symbol_highlight;
             this.SupplementalInfoLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;

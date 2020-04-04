@@ -48,7 +48,7 @@ namespace WDAC_Wizard
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 14F);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(197, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -60,7 +60,7 @@ namespace WDAC_Wizard
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(198, 91);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -74,7 +74,7 @@ namespace WDAC_Wizard
             this.button_Create.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
             this.button_Create.FlatAppearance.BorderSize = 2;
             this.button_Create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Create.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Create.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Create.ForeColor = System.Drawing.Color.DodgerBlue;
             this.button_Create.Location = new System.Drawing.Point(798, 159);
             this.button_Create.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -87,7 +87,7 @@ namespace WDAC_Wizard
             // 
             // textBoxPolicyPath
             // 
-            this.textBoxPolicyPath.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.textBoxPolicyPath.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBoxPolicyPath.Location = new System.Drawing.Point(206, 163);
             this.textBoxPolicyPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxPolicyPath.Name = "textBoxPolicyPath";
@@ -111,7 +111,7 @@ namespace WDAC_Wizard
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(16, 9);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -122,7 +122,7 @@ namespace WDAC_Wizard
             // 
             // textBox_PolicyName
             // 
-            this.textBox_PolicyName.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.textBox_PolicyName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBox_PolicyName.Location = new System.Drawing.Point(148, 65);
             this.textBox_PolicyName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox_PolicyName.Name = "textBox_PolicyName";
@@ -133,7 +133,7 @@ namespace WDAC_Wizard
             // label_policyName
             // 
             this.label_policyName.AutoSize = true;
-            this.label_policyName.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label_policyName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label_policyName.ForeColor = System.Drawing.Color.Black;
             this.label_policyName.Location = new System.Drawing.Point(16, 65);
             this.label_policyName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -144,7 +144,7 @@ namespace WDAC_Wizard
             // 
             // textBox_PolicyID
             // 
-            this.textBox_PolicyID.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.textBox_PolicyID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBox_PolicyID.Location = new System.Drawing.Point(148, 119);
             this.textBox_PolicyID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox_PolicyID.Name = "textBox_PolicyID";
@@ -155,7 +155,7 @@ namespace WDAC_Wizard
             // label_fileLocation
             // 
             this.label_fileLocation.AutoSize = true;
-            this.label_fileLocation.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label_fileLocation.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label_fileLocation.ForeColor = System.Drawing.Color.Black;
             this.label_fileLocation.Location = new System.Drawing.Point(16, 120);
             this.label_fileLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);

@@ -47,7 +47,7 @@ namespace WDAC_Wizard
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(200, 56);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -59,7 +59,7 @@ namespace WDAC_Wizard
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(200, 117);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -81,7 +81,7 @@ namespace WDAC_Wizard
             // finishLabel
             // 
             this.finishLabel.AutoSize = true;
-            this.finishLabel.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.finishLabel.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finishLabel.ForeColor = System.Drawing.Color.Black;
             this.finishLabel.Location = new System.Drawing.Point(1, 21);
             this.finishLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -93,7 +93,7 @@ namespace WDAC_Wizard
             // progress_Label
             // 
             this.progress_Label.AutoSize = true;
-            this.progress_Label.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.progress_Label.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.progress_Label.ForeColor = System.Drawing.Color.Black;
             this.progress_Label.Location = new System.Drawing.Point(200, 227);
             this.progress_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -106,7 +106,7 @@ namespace WDAC_Wizard
             // hyperlinkLabel
             // 
             this.hyperlinkLabel.AutoSize = true;
-            this.hyperlinkLabel.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.hyperlinkLabel.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.hyperlinkLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.hyperlinkLabel.Location = new System.Drawing.Point(4, 91);
             this.hyperlinkLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -131,7 +131,7 @@ namespace WDAC_Wizard
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(1, 58);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -143,7 +143,7 @@ namespace WDAC_Wizard
             // progressString_Label
             // 
             this.progressString_Label.AutoSize = true;
-            this.progressString_Label.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.progressString_Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.progressString_Label.ForeColor = System.Drawing.Color.Black;
             this.progressString_Label.Location = new System.Drawing.Point(200, 186);
             this.progressString_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
